@@ -15,7 +15,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'sudo apt install maven'
-                sh 'mvn clean install'
+                sh 'sudo mvn clean install'
             }
         }
         stage('deploy') {
